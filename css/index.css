@@ -1,0 +1,197 @@
+/*created by Sergey Rusanov*/
+@CHARSEТ "UTF-8";
+
+body {
+  width: 1024px;
+  margin: 10px auto;
+}
+ 
+#search {
+    width: 100%;
+    height : 44px;
+}
+
+#search-input { 
+    height: 20px;
+    padding: 0px 25px 0px 2px;
+}
+
+.search-input-wrapper > button{
+    margin-left: -27px;
+    height: 20px;
+    width: 20px;
+}
+
+.search-input-wrapper {
+    float: right;
+    display: inline;
+    margin: 11px 3px 0px;
+}
+.header-wrapper {
+    height: 100%;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+}
+
+.header-wrapper > span, .displayMain > span {
+    font-size: 2.1em;
+}
+
+
+
+.displayMain {
+    width: 49%;
+    padding: 5px;
+    float:left;
+}
+
+
+.displayMain > div {
+  font-size: 2.1em;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+
+.displayMain > ul{
+    list-style: none;
+}
+
+.displayMain > ul > li{
+    padding: 2px 0;
+    font-size: 1.3em;
+}
+
+.mainPlate-wrapper {
+    height: 600px; 
+}
+
+.contributors {
+    width: 49%;
+    padding: 5px;
+    float: right;
+}
+
+.contributors > span {
+    font-size: 2.1em;
+}
+
+.contributors-item-wrapper {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.contributor-item {
+    margin: 2px;
+    padding: 4px;
+    height: 42px;
+    border: 1px solid rgb(234,234,234);
+}
+
+.contributor-item > a {
+    font-size: 1.9em;
+}
+
+.like, .unlike {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.unlike {
+    background-image: url("../img/unlike.png");
+}
+
+.like {
+    background-image: url("../img/like.png");
+}
+
+.search-result-wrapper {
+    margin: 0 80px;
+    padding: 10px 0;
+}
+
+.search-result-plate {
+    border-radius: 5px;
+    border: 10px solid #fff;
+    box-shadow: 0 0 2px #999;
+    position: relative;
+    height: 150px;
+    margin: 5px 0;
+}
+
+.title-plate, .counter-plate {
+    margin: 5px 0;
+}
+
+.title-plate > span, .search-result-plate > span, .counter-plate > span, .search-result-wrapper > span {
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+.search-result-plates-wrapper {
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 0 2px
+}
+
+.error-input {
+    border: 1px rgb(245,114,128) solid;
+}
+
+.user-info {
+    margin: 50px auto;
+    width: 60%;
+    height: 300px;
+    border: 1px solid rgb(232,232,232);
+}
+
+.user-logo-like {
+    float: left;
+}
+
+.user-logo {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    margin: 2px;
+    border: 1px solid rgb(232,232,232);
+}
+
+.user-info-plate {
+    max-height: 600px;
+}
+
+.user-info-plate > ul > li {
+    padding-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.user-info-plate > ul > li:first-of-type {
+    font-size: 2.1em;
+}
+
+
+.user-info-plate > ul {
+    list-style: none;
+    float: right;
+}
+
+/*waiting overlay*/
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background : url("/ed/img/ajaxLoader_64x64.gif") no-repeat center;
+  position : absolute;
+  z-index : 9999;
+  display : inline-block;
+  opacity : 1;
+  left : 0;
+  top : 0;
+}
