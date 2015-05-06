@@ -1,0 +1,9 @@
+<?php
+//Изменять только необходимые данные.
+$connect = array(
+				'dbHost' => 'localhost',
+	 			'dbLogin' => 'root',
+				'dbPass' => '',
+				'dbName' => 'dbTest'
+				);
+?>
